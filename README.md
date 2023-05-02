@@ -141,9 +141,9 @@ tables. Think of a foreign key as a pointer to the table where it’s a primary 
 primary key of the Stations table, and a foreign key in the Stops and Ridership tables --- this allows the Stops 
 and Ridership tables to point to the station name in case it’s needed.
 
-Program functionality
+**Program functionality**
 
-Command “1”
+**Command “1”**
 Input a partial station name from the user (SQL wildcards _ and % allowed) and retrieve the stations that 
 are “like” the user’s input. Output station names in ascending order. If no stations are found, say so:
 
@@ -180,10 +180,11 @@ sql = "Select … Where Station_Name like ? …"
 Then, when you execute the query, you provide the value to the execute( ) function:
 dbCursor.execute(sql, [value_to_insert_into_query])
 
-Command “2”
+**Command “2”**
 Output the ridership at each station, in ascending order by station name. Along with each value, output the 
 percentage this value represents across the total L ridership. The totals must be computed using SQL, the 
 percentages can be computed using Python (output values on the next page are omitted for brevity):
+
 Please enter a command (1-9, x to exit): 2
 ** ridership all stations **
 18th : 9,248,879 (0.27%)
@@ -206,7 +207,7 @@ In a print statement, the “f” stands for formatted output. The “:,” afte
 that value with “,” separators. The “:.2f” after the percentage variable means output the value with 2 digits
 following the decimal point.
 
-Command “3”
+**Command “3”**
 Output the top-10 busiest stations in terms of ridership, in descending order by ridership:
 
 Please enter a command (1-9, x to exit): 3
@@ -225,7 +226,7 @@ Roosevelt : 61,487,262 (1.82%)
 As in command #2, use SQL to compute the totals and the order, and Python to compute the percentages. 
 Similar output formatting as in command #2.
 
-Command “4”
+**Command “4”**
 Output the least-10 busiest stations in terms of ridership, in ascending order by ridership:
 
 Please enter a command (1-9, x to exit): 4
@@ -241,7 +242,7 @@ Halsted/63rd : 4,707,290 (0.14%)
 Foster : 4,772,450 (0.14%)
 Indiana : 4,942,648 (0.15%)
 
-Command “5”
+**Command “5”**
 Input a line color from the user and output all stop names that are part of that line, in ascending order. If 
 the line does not exist, say so:
 
@@ -263,7 +264,7 @@ and “YELLOW” are considered the same. Do not hard-code the colors of the L l
 the existence of a line color in the L system can easily be determined by looking at the result of your SQL 
 query. Note that “Purple” and “Purple-Express” are considered separate lines in the L system.
 
-Command “6”
+**Command “6”**
 Outputs total ridership by month, in ascending order by month. After the output, the user is given the 
 option to plot the data:
 Please enter a command (1-9, x to exit): 6
@@ -303,7 +304,7 @@ plt.show()
 
 If you need to plot multiple lines, you call plot() once for each line, and then call show() at the end.
 
-Command “7”
+**Command “7”**
 Outputs total ridership by year, in ascending order by year. After the output, the user is given the option to 
 plot the data:
 
@@ -336,7 +337,7 @@ Plot? (y/n) y
 If the user responds with “y” your program should plot as follows (with appropriate title and axis labels):
 If the user responds with any other input, do not plot. [ This will be important for Gradescope testing. ] 
 
-Command “8”
+**Command “8”**
 Inputs a year and the names of two stations (full or partial names), and then outputs the daily ridership at 
 each station for that year. Since the output would be quite long, you should only output the first 5 days and 
 last 5 days of data for each station (as shown below):
@@ -394,7 +395,7 @@ If both station names match exactly one station, the command should output the d
 (station 1 followed by station 2), and then prompt to plot. Note that if the user enters a year for which there is 
 no data, no error message is necessary --- the output and plot will be empty, which is sufficient.
 
-Command “9” 
+**Command “9” **
 Input a line color from the user and output all station names that are part of that line, in ascending order. 
 You will most likely get duplicates, use SQL’s “distinct” to delete the duplicates for you before outputting. If 
 the line does not exist, say so:
