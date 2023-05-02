@@ -1,16 +1,9 @@
 # Analyzing CTA2 L data in Python
-CS 341: Programming Languages Design 
-and Implementation
-Spring 2023 
-Project 01 : Analyzing CTA2 L data in Python (doc v1.0)
-Assignment: Python program to analyze CTA2 L data stored in SQLite
-Evaluation: Gradescope followed by manual execution & review
-Policy: Individual work only
-Complete By: Thursday February 9th @ 11:59pm CDT 
-Late submissions: 10% penalty if submitted late, but before Friday 2/10 @ 11:59pm
-30% penalty if submitted late, but before Saturday 2/11 @ 11:59pm
-Pre-requisites: Homework 01 and 02
+CS 341: Programming Languages Design and Implementation
+Spring 2023
 
+Project 01 : Analyzing CTA2 L data in Python
+Assignment: Python program to analyze CTA2 L data stored in SQLite
 
 Overview
 
